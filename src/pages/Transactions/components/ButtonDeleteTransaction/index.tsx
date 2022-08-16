@@ -12,6 +12,7 @@ import { Button, Content } from './styles'
 import { DeleteTransaction } from './DeleteTransaction'
 import { api } from '../../../../lib/axios'
 import { useContextSelector } from 'use-context-selector'
+import { useCallback } from 'react'
 
 interface ButtonDeleteTransactionProps {
   transaction: Transaction
@@ -25,11 +26,11 @@ export function ButtonDeleteTransaction({
     (context) => context.fetchTransactions,
   )
 
-  async function handleDeleteTransaction() {
+  const handleDeleteTransaction = useCallback(async () => {
     await api.delete(`/transactions/${transaction.id}`)
 
     await fetchTransactions()
-  }
+  }, [])
 
   return (
     <Tooltip.Provider>

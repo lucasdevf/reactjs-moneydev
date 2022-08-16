@@ -29,7 +29,7 @@ export function Transactions() {
         {transactions.length === 0 ? (
           <NoTransactions>
             <SmileySad size={40} />
-            <p>Você ainda não tem nenhuma transação cadastrada</p>
+            <p>Nenhuma transação encontrada.</p>
           </NoTransactions>
         ) : (
           <TransactionsTable>

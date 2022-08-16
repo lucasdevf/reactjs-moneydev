@@ -1,3 +1,12 @@
 {
-  "transactions": []
+  "transactions": [
+    {
+      "description": "Desenvolvimento de app",
+      "value": 500,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2022-08-16T22:28:16.454Z",
+      "id": 1
+    }
+  ]
 }

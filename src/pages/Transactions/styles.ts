@@ -40,3 +40,12 @@ export const PriceHighlight = styled.span<PriceHighlightProps>`
       ? props.theme['green-300']
       : props.theme['red-300']};
 `
+
+export const NoTransactions = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  color: ${(props) => props.theme['gray-400']};
+`

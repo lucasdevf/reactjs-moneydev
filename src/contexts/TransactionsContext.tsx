@@ -2,7 +2,7 @@ import { ReactNode, useEffect, useState, useCallback } from 'react'
 import { createContext } from 'use-context-selector'
 import { api } from '../lib/axios'
 
-interface Transaction {
+export interface Transaction {
   id: number
   description: string
   type: 'income' | 'outcome'
